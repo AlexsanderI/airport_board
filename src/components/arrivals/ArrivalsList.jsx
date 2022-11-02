@@ -34,7 +34,7 @@ const ArrivalsList = () => {
           : result
       );
     }
-  }, [new Date(flyDay).getTime(), flight, currentData]);
+  }, [flight, currentData]);
 
   return <Flights data={arrivals} spin="arr" is={is} />;
 };
